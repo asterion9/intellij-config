@@ -58,6 +58,10 @@
           <option name="url" value="git@github.com:Cooya/Tobby.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:LucBerge/B4D.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Steve\project" />
