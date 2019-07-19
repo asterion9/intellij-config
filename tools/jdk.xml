@@ -1,0 +1,16 @@
+<toolSet name="jdk">
+  <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\Java\jdk-12.0.1\bin\jdeps.exe" />
+      <option name="PARAMETERS" value="-s -R target/classes" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/Java/jdk-12.0.1/bin" />
+    </exec>
+  </tool>
+  <tool name="jlink" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\Java\jdk-12.0.1\bin\jlink.exe" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/Java/jdk-12.0.1/bin" />
+    </exec>
+  </tool>
+</toolSet>
