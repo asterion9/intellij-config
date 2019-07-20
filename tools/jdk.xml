@@ -1,9 +1,9 @@
 <toolSet name="jdk">
   <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="C:\Program Files\Java\jdk-12.0.1\bin\jdeps.exe" />
-      <option name="PARAMETERS" value="-s -R target/classes" />
-      <option name="WORKING_DIRECTORY" value="C:/Program Files/Java/jdk-12.0.1/bin" />
+      <option name="COMMAND" value="$JDKPath$\bin\jdeps.exe" />
+      <option name="PARAMETERS" value="-s --module-path $ModuleName$ -cp &quot;$Classpath$&quot; -R --add-modules &quot;java.net.http,javafx.graphics,javafx.controls,org.pcap4j.core,reactor.core,slf4j.api,org.reactivestreams&quot;$OutputPath$" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
   <tool name="jlink" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
