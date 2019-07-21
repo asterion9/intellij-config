@@ -2,7 +2,7 @@
   <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jdeps.exe" />
-      <option name="PARAMETERS" value="--module-path &quot;$JDKPath$/jmods;$OutputPath$;$Classpath$&quot; -R $OutputPath$" />
+      <option name="PARAMETERS" value="--list-deps $OutputPath$" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
