@@ -2,14 +2,14 @@
   <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jdeps.exe" />
-      <option name="PARAMETERS" value="--list-deps $OutputPath$" />
+      <option name="PARAMETERS" value="--module-path &quot;%JAVA_HOME%;C:\Program Files\Java\javafx-sdk-12.0.1;target/classes&quot; --list-deps $OutputPath$" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
   <tool name="jlink" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jlink.exe" />
-      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --add-modules java.base,java.net.http,java.desktop,java.xml,jdk.unsupported,java.logging,java.sql,java.instrument --output jre-12_2" />
+      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --module-path &quot;%JAVA_HOME%;C:\Program Files\Java\javafx-sdk-12.0.1&quot; --add-modules java.base,java.net.http,java.desktop,java.xml,jdk.unsupported,java.logging,java.sql,java.instrument,javafx.base,javafx.controls,javafx.graphics --output jre-12_4" />
       <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
     </exec>
   </tool>
