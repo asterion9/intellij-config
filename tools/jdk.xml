@@ -9,7 +9,7 @@
   <tool name="jlink" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jlink.exe" />
-      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --module-path &quot;%JAVA_HOME%;${PATH_TO_FX}/jmods&quot; --add-modules  java.base,java.desktop,java.net.http,java.sql,javafx.controls,javafx.fxml,jdk.unsupported --output C:\Users\Steve\project\magicsmither\capture\jre" />
+      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --module-path &quot;%JAVA_HOME%;${PATH_TO_FX}/jmods&quot; --add-modules  java.base,java.desktop,java.net.http,java.sql,javafx.controls,javafx.fxml,jdk.unsupported,java.instrument --output C:\Users\Steve\project\magicsmither\capture\jre" />
       <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
     </exec>
   </tool>
