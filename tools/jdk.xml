@@ -2,7 +2,7 @@
   <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jdeps.exe" />
-      <option name="PARAMETERS" value="--module-path &quot;%JAVA_HOME%;%PATH_TO_FX%;$Classpath$&quot; --print-module-deps --ignore-missing-deps --add-modules mapdb,org.pcap4j.core,org.reactivestreams,reactor.core $OutputPath$" />
+      <option name="PARAMETERS" value="--module-path &quot;%JAVA_HOME%;%PATH_TO_FX%;$Classpath$&quot; --print-module-deps --ignore-missing-deps -r $OutputPath$" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
