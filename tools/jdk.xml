@@ -2,14 +2,14 @@
   <tool name="jdeps" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jdeps.exe" />
-      <option name="PARAMETERS" value="--module-path &quot;%JAVA_HOME%;%PATH_TO_FX%;$Classpath$&quot; --print-module-deps --ignore-missing-deps -r $OutputPath$" />
+      <option name="PARAMETERS" value="--module-path C:\Users\Steve\tool\javafx-sdk-14\lib;C:\Users\Steve\project\magicsmither\capture\target\capture-1.0-SNAPSHOT-bundle\lib --ignore-missing-deps --print-module-deps --add-modules mapdb,org.pcap4j.core,org.reactivestreams,reactor.core,slf4j.api,com.google.common,elsa,jsr305,kotlin.stdlib,lz4,org.eclipse.collections.api,org.eclipse.collections.impl,slf4j.simple,com.google.errorprone.annotations,j2objc.annotations,com.sun.jna,failureaccess $OutputPath$" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
   <tool name="jlink" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$JDKPath$\bin\jlink.exe" />
-      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --module-path &quot;%JAVA_HOME%;${PATH_TO_FX}/jmods&quot; --add-modules java.base,java.net.http,javafx.controls,javafx.fxml --output C:\Users\Steve\project\magicsmither\capture\jre" />
+      <option name="PARAMETERS" value="--no-header-files --no-man-pages --compress=2 --strip-debug --module-path &quot;%JAVA_HOME%;${PATH_TO_FX}/jmods&quot; --add-modules  java.base,java.desktop,java.net.http,java.sql,javafx.controls,javafx.fxml,jdk.unsupported --output C:\Users\Steve\project\magicsmither\capture\jre" />
       <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
     </exec>
   </tool>
